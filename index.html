@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Drop Box with cache</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="./public/styles.css">
+
+</head>
+
+<!--Header container-->
+<div>
+    <h1>Tommy's Dropbox Page</h1>
+</div>
+
+<!--Center page, two buttons for uploading files-->
+<div id="submissionArea">
+
+    <form action="/files" method="POST" id="uploadForm" enctype="multipart/form-data">
+        <input type="file" name="fileName" id="userFile">
+        <input type="submit" value="Upload File" id="submit">
+    </form>
+
+    <form action="/download" method="GET" id="DLButton" enctype="multipart/form-data">
+    
+        <a href="" >Download Latest Uploaded File<</a>
+    </form>
+
+</div>
+
+<!--scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./public/main.js"></script>
+<script src="./app.js"></script>
+
+
+</body>
+
+
+
+</html>

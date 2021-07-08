@@ -1,0 +1,9 @@
+h1 { 
+    display: inline-block;
+    justify-content: center;
+    font-size: 100px;
+}
+
+html {
+    background-color: blue;;
+}
